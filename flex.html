@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex</title>
+        <style>
+            .wrapper {
+                display: flex;
+            }
+            
+            .wrapper > div {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                border: 1px solid red;
+            }
+            
+            .wrapper > div:first-child{
+                width: 300px;
+            }
+            
+            .wrapper > div:nth-child(2) {
+                flex: 1;
+            }
+            
+            .wrapper > div:nth-child(3) {
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>box 1</div>
+            <div>box 2</div>
+            <div>box 3</div>
+        </div>
+    </body>
+</html>
